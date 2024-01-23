@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-body {
+.body {
   margin: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 /* CSS for header */
 .header {
@@ -129,35 +130,55 @@ i {
   font-size: 14px;
   color: blaCK;
 }
+.abouttrandingmain {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
+}
 
 .About-trading {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding:40px 52px 5px 64px;
-  border-top: 2px solid #eeeeee;
+  padding: 20px;
+  border-top: 15px solid #d3d0d0;
+  box-sizing: border-box;
+  /* max-width: 400px; */
+  /* box-sizing: border-box; */
+  max-width: 50%;
+  /* max-height: 1000px; */
+  flex-wrap: nowrap;
 }
 
 .About-trading img {
-  width: 500px;
-  max-width: 100%;
-  height: auto;
+  width: 70%;
+  max-width: 70%;
+  height: 50%;
   border-radius: 10px;
+  margin-top: 15px;
+  align-items: center;
 }
 
-.About-trading-text h2 {
-  font-size: 30px;
+.About-trading-text h3 {
+  font-size: 24px;
   color: #333333;
   text-transform: uppercase;
-  margin: 0;
+  margin: 10px 0 5px;
 }
 
 .About-trading-text p {
-  font-size: 20px;
+  font-size: 16px;
   color: #585858;
-  margin: 10px 0;
+  margin: 0;
 }
+
+/* Media Query for screens below 768px */
+@media (max-width: 768px) {
+  .About-trading {
+    max-width: 50%;
+  }
+}
+
 /* CSS for footer */
 .footer {
   display: flex;
